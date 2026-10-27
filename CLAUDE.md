@@ -101,3 +101,17 @@ never release/rebuild on channel change). Retries 403/429/5xx with backoff; not 
 - The in-app updater checks `UpdateChecker.REPO_SLUG` (`opentvproject/opentv`); for fork releases point it
   at the fork or upstream releases will be offered over fork builds.
 - Never put provider URLs, usernames, passwords or MACs in logs, tests or fixtures.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues on the fork `neutraltone/opentv` (never upstream), via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five canonical labels, unchanged: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `GLOSSARY.md` plus `docs/adr/` at the repo root, created lazily. See `docs/agents/domain.md`.
